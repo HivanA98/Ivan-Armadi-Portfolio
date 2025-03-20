@@ -47,15 +47,18 @@ a {
 }
 @media (max-width: 768px) {
     .certification-container {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
         flex-direction: column;
         align-items: center; 
     }
 
     .katalon-logo {
-        width: 80%;
+        width: 55%;
     }
 
     .istqb-logo {
-        width: 100%;
+        width: 55%;
     }
 }
