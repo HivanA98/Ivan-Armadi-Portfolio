@@ -69,3 +69,9 @@ a {
         min-width: 250px !important;
     }
 }
+@supports (-webkit-overflow-scrolling: touch) {
+    .katalon-logo, .istqb-logo {
+        width: 60% !important;
+        min-width: 250px !important;
+    }
+}
