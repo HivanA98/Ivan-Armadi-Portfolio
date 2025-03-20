@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    margin: 0%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: 0%;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  button {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+.img {
+    border: 1px solid chocolate;
+    width: 20%;
+      }
+
