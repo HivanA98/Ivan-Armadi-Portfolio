@@ -26,16 +26,22 @@ a {
       }
 
 .certification-container {
-    display: flex; /* Membuat gambar sejajar horizontal */
-    justify-content: center; /* Membuat gambar tetap di tengah */
-    gap: 20px; /* Jarak antar gambar */
-    flex-wrap: wrap; /* Agar responsif di layar kecil */
-    max-width: 100%; /* Mencegah keluar dari border */
-    overflow: hidden;
-    }
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Atur jarak antara gambar */
+}
+
 .certification-container img {
-    max-width: 45%; /* Mencegah gambar terlalu besar */
-    height: auto; /* Menjaga proporsi gambar */
-    border-radius: 10px; /* (Opsional) Memberikan sudut melengkung */
-    }
+    height: auto;
+}
+
+.katalon-logo {
+    width: 430px; /* Sesuaikan dengan ukuran gambar di sebelahnya */
+    max-width: 100%; /* Agar tetap responsif */
+}
+
+.istqb-logo {
+    width: 500px; /* Sesuaikan ukuran agar seimbang */
+    max-width: 100%;
+}
