@@ -39,12 +39,15 @@ a {
 .katalon-logo {
     width: 450px; 
     max-width: 100%;
+    min-width: 300px;
 }
 
 .istqb-logo {
     width: 500px;
     max-width: 100%;
+    min-width: 320px;
 }
+
 @media (max-width: 768px) {
     .certification-container {
         display: flex;
@@ -54,11 +57,15 @@ a {
         align-items: center; 
     }
 
-    .katalon-logo {
+    .katalon-logo, .istqb-logo {
         width: 55%;
+        min-width: 200px;
     }
+}
 
-    .istqb-logo {
-        width: 55%;
+@supports (-webkit-touch-callout: none) {
+    .katalon-logo, .istqb-logo {
+        width: 60% !important;
+        min-width: 250px !important;
     }
 }
