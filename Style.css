@@ -29,7 +29,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Atur jarak antara gambar */
+    gap: 20px;
 }
 
 .certification-container img {
@@ -37,11 +37,25 @@ a {
 }
 
 .katalon-logo {
-    width: 430px; /* Sesuaikan dengan ukuran gambar di sebelahnya */
-    max-width: 100%; /* Agar tetap responsif */
+    width: 450px; 
+    max-width: 100%;
 }
 
 .istqb-logo {
-    width: 500px; /* Sesuaikan ukuran agar seimbang */
+    width: 500px;
     max-width: 100%;
+}
+@media (max-width: 768px) {
+    .certification-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .katalon-logo {
+        width: 80%;
+    }
+
+    .istqb-logo {
+        width: 100%;
+    }
 }
