@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Indonesia Flag</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Indonesia Flag">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .redflag {
+            background-color: red;
+            width: 100%;
+            height: 150px;
+            border: 5px solid black;
+            border-bottom: 0px;
+            margin: 0px
+        }
+
+        .whiteflag {
+            background-color: white;
+            width: 100%;
+            height: 150px;
+            border: 5px solid black;
+            border-top: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: red;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Indonesia</h1>
+    <div class="redflag"></div>
+    <div class="whiteflag"></div>
+</body>
+
+</html>
