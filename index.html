@@ -374,36 +374,163 @@
         }
         .submit-btn:hover { opacity: 0.9; }
 
-        /* --- FOOTER SECTION --- */
+/* --- FOOTER SECTION --- */
         footer {
-            border-top: 1px solid var(--border-color); padding: 4rem 0 2rem; background-color: #0a0a0e; margin-top: 4rem;
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0 2rem;
+            background-color: #0a0a0e;
+            margin-top: 4rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: left; /* PERBAIKAN: Ubah jadi Left agar rapi di desktop */
         }
-        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            align-items: start; /* Pastikan item sejajar di atas */
+        }
+
         .footer-logo {
-            display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.2rem;
-            color: white; text-decoration: none; margin-bottom: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 1rem;
         }
-        .footer-logo .logo-badge { background: linear-gradient(135deg, var(--accent-purple), var(--accent-red)); padding: 6px 10px; font-size: 0.9rem; color: white; }
-        .footer-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; max-width: 320px; }
+
+        .footer-logo .logo-badge {
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-red));
+            padding: 6px 10px;
+            font-size: 0.9rem;
+            color: white;
+            border-radius: 4px; /* Tambahan border radius agar konsisten */
+        }
+
+        .footer-desc {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            max-width: 320px;
+            /* Hapus margin: 0 auto; jika ada sebelumnya */
+        }
         
-        .footer-col h4 { font-size: 1.1rem; margin-bottom: 1.5rem; color: white; font-weight: 700; }
-        .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 0.8rem; }
-        .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
-        .footer-links a:hover { color: white; }
+        .footer-col h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0; /* Pastikan padding 0 */
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
         
-        .social-squares { display: flex; gap: 10px; margin-bottom: 1rem; }
+        .social-squares {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1rem;
+            /* Default flex-start (kiri) untuk desktop */
+        }
+
         .social-square {
-            width: 40px; height: 40px; border: 1px solid var(--border-color); border-radius: 4px;
-            display: flex; align-items: center; justify-content: center; color: var(--text-muted);
-            text-decoration: none; transition: all 0.3s; background-color: rgba(255, 255, 255, 0.02);
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s;
+            background-color: rgba(255, 255, 255, 0.02);
         }
-        .social-square:hover { background-color: rgba(255, 255, 255, 0.1); color: white; }
-        .footer-connect-text { color: var(--text-muted); font-size: 0.85rem; }
+
+        .social-square:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .footer-connect-text {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
 
         .footer-bottom {
-            border-top: 1px solid var(--border-color); padding-top: 2rem; display: flex;
-            justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .built-with {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .built-with i {
+            color: var(--accent-red);
+        }
+
+        /* Responsive Contact & Footer */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            /* Setting Footer Khusus Mobile agar tetap Rapi Tengah */
+            footer {
+                text-align: center; /* Kembalikan ke Center untuk Mobile */
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .footer-desc {
+                margin: 0 auto; /* Tengah-kan deskripsi di mobile */
+            }
+
+            .social-squares {
+                justify-content: center; /* Tengah-kan icon sosial media di mobile */
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
         }
         .built-with { display: flex; align-items: center; gap: 5px; }
         .built-with i { color: var(--accent-red); }
