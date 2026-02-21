@@ -198,6 +198,51 @@
             color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;
         }
 
+
+
+        /* --- Tambahan CSS untuk Publication --- */
+        .edu-publication {
+            margin-top: 1.2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1); /* Garis pemisah halus */
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .edu-publication i {
+            color: var(--accent-purple); /* Warna ikon ungu */
+            font-size: 1.1rem;
+            margin-top: 2px;
+        }
+
+        .pub-content {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #d1d1d6;
+        }
+
+        .pub-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pub-link {
+            color: var(--accent-red);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .pub-link:hover {
+            color: #ff4d6d; /* Warna lebih terang saat hover */
+            text-decoration: underline;
+        }
         /* --- PROJECTS SECTION --- */
         .filter-container { display: flex; justify-content: center; gap: 10px; margin-bottom: 3rem; flex-wrap: wrap; }
         .filter-btn {
@@ -380,7 +425,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#skills">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -400,9 +445,9 @@
                     <h2>A Dedicated Professional in Quality Assurance & Software Development</h2>
                     <p>Passionate QA Engineer with expertise in manual and automated testing, combined with strong development skills in web and mobile applications. I ensure software quality through comprehensive testing strategies and bring a developer's perspective to quality assurance.</p>
                     <div class="btn-group">
-                        <a href="#" class="action-btn btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="#" class="action-btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#" class="action-btn btn-outline"><i class="far fa-envelope"></i> Email</a>
+                        <a href="https://www.linkedin.com/in/hivanarmadi/" class="action-btn btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/HivanA98" class="action-btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="mailto:hivanarmadi@gmail.com" class="action-btn btn-outline"><i class="far fa-envelope"></i> Email</a>
                     </div>
                 </div>
                 <div class="visual-content">
@@ -458,7 +503,7 @@
                         <h3 class="card-title">Technical Skills</h3>
                     </div>
                     <div class="tags-container">
-                        <span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">JavaScript/TS</span><span class="skill-tag">SQL (MySQL)</span><span class="skill-tag">Git/GitHub</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Docker</span><span class="skill-tag">Agile/Scrum</span><span class="skill-tag">JIRA & Confluence</span>
+                        <span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">JavaScript/TS</span><span class="skill-tag">SQL (MySQL)</span><span class="skill-tag">Git/GitHub</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Docker</span><span class="skill-tag">Agile/Scrum</span><span class="skill-tag">JIRA & Confluence</span><span class="skill-tag">POM (Page Object Model)</span>
                     </div>
                 </div>
             </div>
@@ -508,7 +553,7 @@
             </div>
             
             <div class="edu-wrapper">
-                <div class="edu-card">
+<div class="edu-card">
                     <span class="edu-badge">Currently Enrolled</span>
                     <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="edu-content">
@@ -519,6 +564,19 @@
                             <span><i class="far fa-calendar-alt"></i> October 2023 - August 2026</span>
                         </div>
                         <p class="edu-desc">Transferred from Surya University. Completed literature review on therapeutic potential of bacteriophages against resistant Staphylococcus aureus.</p>
+                        
+                        <div class="edu-publication">
+                            <i class="fas fa-book-open"></i>
+                            <div class="pub-content">
+                                <span class="pub-label">Academic Publication</span>
+                                <a href="https://jurnalfkip.unram.ac.id/index.php/JBT/article/view/9938" target="_blank" class="pub-link">
+                                    "Literature Review on the Therapeutic Potential of Bacteriophages Against Resistant Staphylococcus aureus"
+                                </a>
+                                <br>
+                                <span style="font-size: 0.85rem; color: #888;">Journal of Biology Tropis, October 2025</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -694,7 +752,7 @@
                     <div class="cert-issuer">Katalon Academy</div>
                     <div class="cert-date">April 2023</div>
                     <p class="cert-desc">Expert-level certification demonstrating advanced proficiency in Katalon Studio for test automation.</p>
-                    <a href="#" class="btn-view-cert">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://academy.katalon.com/mcertificate/64584df06b92e" class="btn-view-cert">View Credential <i class="fas fa-external-link-alt"></i></a>
                 </div>
 
                 <div class="cert-card">
@@ -706,7 +764,7 @@
                     <div class="cert-issuer">ISTQB</div>
                     <div class="cert-date">March 2023</div>
                     <p class="cert-desc">Foundation Level certification in software testing principles and best practices.</p>
-                    <a href="#" class="btn-view-cert">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://scr.istqb.org/?name=Ivan+Armadi+Hasugian&number=98178&orderBy=relevancy&orderDirection=&dateStart=&dateEnd=&expiryStart=&expiryEnd=&certificationBody=&examProvider=&certificationLevel=&country=&resultsPerPage=10" class="btn-view-cert">View Credential <i class="fas fa-external-link-alt"></i></a>
                 </div>
 
                 <div class="cert-card">
@@ -718,7 +776,7 @@
                     <div class="cert-issuer">Binar Academy</div>
                     <div class="cert-date">June 2024</div>
                     <p class="cert-desc">Intensive bootcamp covering machine learning, data visualization, and data analysis techniques.</p>
-                    <a href="#" class="btn-view-cert">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://drive.google.com/file/d/1FEZQNVzc9bg4tjzZZOpnGo5ooec6WoGS/view?usp=sharing" class="btn-view-cert">View Credential <i class="fas fa-external-link-alt"></i></a>
                 </div>
 
             </div>
@@ -819,9 +877,9 @@
                 <div class="footer-col">
                     <h4>Connect With Me</h4>
                     <div class="social-squares">
-                        <a href="#" class="social-square"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-square"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-square"><i class="far fa-envelope"></i></a>
+                        <a href="https://github.com/HivanA98" class="social-square"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hivanarmadi/" class="social-square"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:hivanarmadi@gmail.com" class="social-square"><i class="far fa-envelope"></i></a>
                     </div>
                     <p class="footer-connect-text">Open for opportunities and collaborations</p>
                 </div>
