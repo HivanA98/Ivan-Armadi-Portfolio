@@ -100,14 +100,27 @@ p { font-size: 0.95rem; color: #888891; line-height: 1.7; margin-bottom: 2.5rem;
 .btn-outline:hover { background-color: rgba(255, 255, 255, 0.05); }
 
 .visual-content { flex: 1; display: flex; justify-content: flex-end; }
-.image-wrapper { position: relative; width: 100%; max-width: 450px; height: 280px; border-radius: 12px; background-color: #1a1a24; }
+.image-wrapper { 
+    position: relative; 
+    width: 100%; 
+    max-width: 380px; /* Dipersempit agar sesuai dengan proporsi portrait */
+    height: 480px;    /* Ditinggikan agar wajah dan setelan jas masuk sepenuhnya */
+    border-radius: 12px; 
+    background-color: #1a1a24; 
+}
 .image-wrapper::before {
     content: ''; position: absolute; inset: -4px; background: linear-gradient(90deg, var(--accent-purple), var(--accent-red));
     filter: blur(15px); z-index: -1; border-radius: 16px; opacity: 0.6; animation: pulseGlow 4s infinite alternate;
 }
 @keyframes pulseGlow { 0% { opacity: 0.4; filter: blur(15px); } 100% { opacity: 0.8; filter: blur(20px); } }
-.image-wrapper img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
-
+.image-wrapper img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: top center; /* Memaksa browser selalu mengutamakan sisi atas (kepala) saat cropping */
+    border-radius: 12px; 
+    border: 1px solid rgba(255,255,255,0.1); 
+}
 .scroll-down { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: var(--text-muted); font-size: 1.5rem; animation: bounce 2s infinite; cursor: pointer; }
 @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); } 40% { transform: translateY(-10px) translateX(-50%); } 60% { transform: translateY(-5px) translateX(-50%); } }
 
@@ -440,10 +453,17 @@ footer {
 /* --- RESPONSIVE --- */
 @media (max-width: 968px) {
     .hero-section { flex-direction: column-reverse; text-align: center; margin-top: 0; }
-    .visual-content { justify-content: center; } .btn-group { justify-content: center; }
+    .visual-content { justify-content: center; } 
+    .btn-group { justify-content: center; }
     nav ul { display: none; }
     .skills-grid { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    
+    /* Tambahkan baris kode ini agar foto di mobile ukurannya tetap rapi */
+    .image-wrapper { 
+        max-width: 300px; 
+        height: 380px; 
+    }
 }
 
 @media (max-width: 768px) {
