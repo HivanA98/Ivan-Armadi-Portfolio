@@ -71,7 +71,7 @@
                 <div class="focus-box">
                     <h4><i class="fas fa-crosshairs"></i> Current Focus</h4>
                     <ul class="focus-list">
-                        <li>Designing scalable automation architecture</li>
+                        <li>Building maintainable test suites with Page Object Model and GitHub Actions CI</li>
                         <li>Improving test maintainability and reusability</li>
                         <li>Strengthening regression coverage for critical user flows</li>
                         <li>Integrating automation into continuous testing workflows</li>
@@ -103,6 +103,7 @@
                         <span class="skill-tag">Entry &amp; Exit Criteria</span>
                         <span class="skill-tag">Defect Tracking &amp; Reporting</span>
                         <span class="skill-tag">Requirement Traceability</span>
+                        <span class="skill-tag">BDD (Gherkin)</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -117,6 +118,8 @@
                         <span class="skill-tag">Robot Framework (SeleniumLibrary)</span>
                         <span class="skill-tag">Appium</span>
                         <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Karate</span>
+                        <span class="skill-tag">Cucumber</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -132,6 +135,7 @@
                         <span class="skill-tag">DBeaver</span>
                         <span class="skill-tag">PuTTY</span>
                         <span class="skill-tag">Log analysis</span>
+                        <span class="skill-tag">JSON schema validation</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -142,6 +146,7 @@
                     <div class="tags-container">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Groovy</span>
                         <span class="skill-tag">Page Object Model</span>
                         <span class="skill-tag">Data-driven &amp; parameterized testing</span>
                     </div>
@@ -467,11 +472,11 @@
                             <i class="fas fa-book-open"></i>
                             <div class="pub-content">
                                 <span class="pub-label">Academic Publication</span>
-                                <a href="https://doi.org/10.64898/2026.06.13.732091" target="_blank" class="pub-link">
+                                <a href="https://memorias.ioc.fiocruz.br/article/11223/0245-in-silico-characterization-of-lysis-and-host-recognition-modules-in-staphylococcus-aureus-bacteriophage-genomes" target="_blank" class="pub-link">
                                     "In silico characterization of lysis and host-recognition modules in Staphylococcus aureus bacteriophage genomes"
                                 </a>
                                 <br>
-                                <span style="font-size: 0.85rem; color: #888;">Mem&oacute;rias do Instituto Oswaldo Cruz, October 2026</span>
+                                <span style="font-size: 0.85rem; color: #888;">Mem&oacute;rias do Instituto Oswaldo Cruz, September 2026</span>
                             </div>
                         </div>
 
@@ -488,179 +493,128 @@
 
             <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="qa">QA Engineering</button>
-                <button class="filter-btn" data-filter="automation">Automation Testing</button>
-                <button class="filter-btn" data-filter="bioinfo">Bioinformatics</button>
+                <button class="filter-btn" data-filter="automation">Test Automation</button>
+                <button class="filter-btn" data-filter="other">Other</button>
             </div>
 
             <div class="projects-grid">
-                
+
                 <div class="project-card" data-category="automation">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag" style="background-color: #7a1b7e;">Automation Testing</span>
+                    <div class="project-img-wrapper project-badges">
+                        <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
+                        <a href="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/saucedemo.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/saucedemo.yml/badge.svg" alt="Saucedemo Cypress workflow status"></a>
+                        <a href="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/karate.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/karate.yml/badge.svg" alt="Karate API workflow status"></a>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Playwright + pytest Automation (Saucedemo)</h3>
-                        <p class="project-desc">Built 52 UI, E2E, and HTTP-level API tests with Page Object Model and reusable components, running in GitHub Actions across Chromium, Firefox, and WebKit on every push, pull request, and daily schedule; known defects tracked with strict xfail.</p>
+                        <h3 class="project-title">Cypress &amp; Karate Automation</h3>
+                        <p class="project-desc">12 projects with 170+ tests on 10 applications, built with Cypress and Karate.</p>
                         <div class="tags-container project-tags">
-                            <span class="skill-tag">Playwright</span><span class="skill-tag">pytest</span><span class="skill-tag">Python</span><span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Cypress</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Cucumber</span><span class="skill-tag">Karate</span><span class="skill-tag">GitHub Actions</span>
                         </div>
                         <ul class="project-features">
-                            <li>52 tests: 26 UI, 12 E2E, 7 known-bug xfail, 7 HTTP-level API</li>
+                            <li>Page Object Model, BDD (Cucumber/Gherkin), cy.intercept network stubbing, and Faker data-driven tests</li>
+                            <li>Karate API tests covering CRUD and JSON schema validation</li>
+                            <li>One reusable GitHub Actions workflow, one badge per project</li>
+                        </ul>
+                        <a href="https://github.com/HivanA98/Cypress-CodeJS" target="_blank" rel="noopener" class="btn-view-cert project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="automation">
+                    <div class="project-img-wrapper project-badges">
+                        <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
+                        <a href="https://github.com/HivanA98/Playwright_Python/actions/workflows/tests.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Playwright_Python/actions/workflows/tests.yml/badge.svg" alt="Playwright tests workflow status"></a>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Playwright + pytest (Saucedemo)</h3>
+                        <p class="project-desc">52 tests for Saucedemo written in Python with Playwright and pytest.</p>
+                        <div class="tags-container project-tags">
+                            <span class="skill-tag">Playwright</span><span class="skill-tag">Python</span><span class="skill-tag">pytest</span><span class="skill-tag">GitHub Actions</span>
+                        </div>
+                        <ul class="project-features">
+                            <li>26 UI, 12 E2E, 7 known-bug strict xfail, and 7 HTTP-level API tests</li>
                             <li>Page Object Model with reusable components</li>
-                            <li>GitHub Actions across Chromium, Firefox, and WebKit on push, pull request, and daily schedule</li>
-                            <li><a href="https://github.com/HivanA98/Playwright_Python" target="_blank" style="color: var(--accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px;">View Project on GitHub <i class="fas fa-external-link-alt"></i></a></li>
+                            <li>CI on Chromium, Firefox, and WebKit on push, PR, and daily schedule</li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="qa">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag">QA Engineering</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Green Hoop App - Comprehensive Testing</h3>
-                        <p class="project-desc">SIT and UAT for mobile sustainability application. Developed 150+ automated test scripts covering web and mobile platforms (Android &amp; iOS) in Katalon Studio using data-driven test suites and a reusable Object Repository.</p>
-                        <div class="tags-container project-tags">
-                            <span class="skill-tag">Katalon Studio</span><span class="skill-tag">Android Testing</span><span class="skill-tag">iOS Testing</span><span class="skill-tag">API Testing</span>
-                        </div>
-                        <ul class="project-features">
-                            <li>Analyzed 10+ business requirements and Figma designs</li>
-                            <li>Developed 150+ automated test scripts</li>
-                            <li>Reduced manual regression time by 30%</li>
-                            <li>Uncovered 20+ critical bugs</li>
-                            <li>Closed 200+ test tickets</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="qa">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag">QA Engineering</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SoSo Mall - E-commerce Platform QA</h3>
-                        <p class="project-desc">Backend testing on Magento and mobile testing for Android &amp; iOS. Designed and executed 30+ test scenarios for Android and iOS.</p>
-                        <div class="tags-container project-tags">
-                            <span class="skill-tag">Magento</span><span class="skill-tag">Katalon Studio</span><span class="skill-tag">JIRA</span>
-                        </div>
-                        <ul class="project-features">
-                            <li>Designed and executed 30+ test scenarios for Android and iOS</li>
-                            <li>Found 10+ critical defects in payment and product synchronization</li>
-                            <li>Identified 100+ web defects fixed before release</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="qa">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag">QA Engineering</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">BMW System Migration - Regression Testing</h3>
-                        <p class="project-desc">End-to-end web smoke and regression testing for a full-stack migration within a fixed 1-month scope. Maintained Confluence test documentation with requirement-to-test traceability.</p>
-                        <div class="tags-container project-tags">
-                            <span class="skill-tag">Confluence</span><span class="skill-tag">Web Testing</span><span class="skill-tag">Defect Triage</span>
-                        </div>
-                        <ul class="project-features">
-                            <li>Logged 150+ defects, both migration-related and pre-existing</li>
-                            <li>Maintained requirement-to-test traceability in Confluence</li>
-                            <li>Delivered go/no-go reports used in release decisions</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="qa">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag">QA Engineering</span>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Nusatrip - Payment & Booking Testing</h3>
-                        <p class="project-desc">Comprehensive payment testing for B2B and B2C flight & hotel bookings. API testing with database validation and system log analysis.</p>
-                        <div class="tags-container project-tags">
-                            <span class="skill-tag">Postman</span><span class="skill-tag">SQL</span><span class="skill-tag">Linux</span><span class="skill-tag">API Testing</span><span class="skill-tag">DBeaver</span><span class="skill-tag">Payment Gateway</span>
-                        </div>
-                        <ul class="project-features">
-                            <li>Tested multiple payment methods</li>
-                            <li>Logged 50+ defects during the platform revamp</li>
-                            <li>Handled all transaction testing</li>
-                        </ul>
+                        <a href="https://github.com/HivanA98/Playwright_Python" target="_blank" rel="noopener" class="btn-view-cert project-link"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-card" data-category="automation">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag" style="background-color: #7a1b7e;">Automation Testing</span>
+                    <div class="project-img-wrapper project-badges">
+                        <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
+                        <a href="https://github.com/HivanA98/Robot-Framework/actions/workflows/robot-tests.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Robot-Framework/actions/workflows/robot-tests.yml/badge.svg" alt="Robot Framework tests workflow status"></a>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Katalon Studio Automation Framework</h3>
-                        <p class="project-desc">Built integrated Web, Mobile, and API automation using Katalon Studio with TestOps reporting to support continuous testing and reduce repetitive regression cycles across multi-platform features. Designed reusable test components to improve maintainability and execution consistency.</p>
+                        <h3 class="project-title">Robot Framework</h3>
+                        <p class="project-desc">54 tests on 4 web apps with Robot Framework and SeleniumLibrary.</p>
                         <div class="tags-container project-tags">
-                            <span class="skill-tag">Katalon Studio</span><span class="skill-tag">Selenium</span>
+                            <span class="skill-tag">Robot Framework</span><span class="skill-tag">SeleniumLibrary</span><span class="skill-tag">Python</span><span class="skill-tag">Pabot</span><span class="skill-tag">GitHub Actions</span>
                         </div>
                         <ul class="project-features">
-                            <li>Built a reusable test framework and created 150+ automated scripts to accelerate regression testing.</li>
-                            <li>Multi-platform automation (Web, Mobile, API)</li>
-                            <li>TestOps integration for reporting</li>
-                            <li>Reusable test framework</li>
-                            <li><a href="https://github.com/HivanA98/NewKatalon" target="_blank" style="color: var(--accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px;">View Project on GitHub <i class="fas fa-external-link-alt"></i></a></li>
+                            <li>Page Object Model and BDD suites</li>
+                            <li>Pabot parallel run (~6.5 min to ~2 min)</li>
+                            <li>Robocop lint; CI on demo apps only (production sites never submit forms)</li>
                         </ul>
+                        <a href="https://github.com/HivanA98/Robot-Framework" target="_blank" rel="noopener" class="btn-view-cert project-link"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-card" data-category="automation">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag" style="background-color: #7a1b7e;">Automation Testing</span>
+                    <div class="project-img-wrapper project-badges">
+                        <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
+                        <a href="https://github.com/HivanA98/Katalon-Studio/actions/workflows/katalon-ci.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Katalon-Studio/actions/workflows/katalon-ci.yml/badge.svg" alt="Katalon CI workflow status"></a>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Cypress E2E Testing Framework</h3>
-                        <p class="project-desc">Designed end-to-end automation to simulate real user interactions and strengthen regression stability on critical UI flows. Focused on reusable test structure and efficient debugging for faster validation cycles.</p>
+                        <h3 class="project-title">Katalon Studio</h3>
+                        <p class="project-desc">Web, API (ReqRes), and Android test automation in Katalon Studio.</p>
                         <div class="tags-container project-tags">
-                            <span class="skill-tag">Cypress</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Mocha</span>
+                            <span class="skill-tag">Katalon Studio</span><span class="skill-tag">Groovy</span><span class="skill-tag">Appium</span><span class="skill-tag">GitHub Actions</span>
                         </div>
                         <ul class="project-features">
-                            <li>Designed end-to-end automation to reduce regression effort and improve release confidence on critical user flows.</li>
-                            <li>Functional test coverage</li>
-                            <li>Reusable test framework</li>
-                            <li>Fast execution and debugging</li>
-                            <li><a href="https://github.com/HivanA98/CypressCodeTraining" target="_blank" style="color: var(--accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px;">View Project on GitHub <i class="fas fa-external-link-alt"></i></a></li>
+                            <li>Shared Page Object core</li>
+                            <li>CSV data-driven tests</li>
+                            <li>Android emulator job in CI</li>
                         </ul>
+                        <a href="https://github.com/HivanA98/Katalon-Studio" target="_blank" rel="noopener" class="btn-view-cert project-link"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="automation">
-                    <div class="project-img-wrapper">
-                        <span class="project-type-tag" style="background-color: #7a1b7e;">Automation Testing</span>
+                <div class="project-card" data-category="other">
+                    <div class="project-img-wrapper project-badges">
+                        <span class="project-type-tag" style="background-color: #0077b6;">Data Science</span>
+                        <a href="https://github.com/HivanA98/DataScience-BinarAcademy/actions/workflows/gold.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/DataScience-BinarAcademy/actions/workflows/gold.yml/badge.svg" alt="Gold CI workflow status"></a>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Robot Framework Web Automation</h3>
-                        <p class="project-desc">Built keyword-driven automated test suites to enable clear, readable, and maintainable test cases for both technical and non-technical stakeholders.</p>
+                        <h3 class="project-title">Data Science: Indonesian Sentiment API</h3>
+                        <p class="project-desc">Rebuilt Binar Academy bootcamp project that serves an Indonesian sentiment model through a Flask + Swagger API.</p>
                         <div class="tags-container project-tags">
-                            <span class="skill-tag">Robot Framework</span><span class="skill-tag">Python</span><span class="skill-tag">SeleniumLibrary</span>
+                            <span class="skill-tag">Python</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">Flask</span><span class="skill-tag">pytest</span>
                         </div>
                         <ul class="project-features">
-                            <li>Designed modular and reusable keywords to accelerate test creation</li>
-                            <li>Abstracted complex UI interactions into easy-to-read business-level test steps</li>
-                            <li>Generated comprehensive HTML reports for clear test execution visibility</li>
-                            <li><a href="https://github.com/HivanA98/Robot-Framework" target="_blank" style="color: var(--accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px;">View Project on GitHub <i class="fas fa-external-link-alt"></i></a></li>
+                            <li>Removed data leakage from the original training</li>
+                            <li>Macro-F1 0.797 to 0.857</li>
+                            <li>pytest in GitHub Actions</li>
                         </ul>
+                        <a href="https://github.com/HivanA98/DataScience-BinarAcademy" target="_blank" rel="noopener" class="btn-view-cert project-link"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
-                <div class="project-card" data-category="bioinfo">
-                    <div class="project-img-wrapper">
+
+                <div class="project-card" data-category="other">
+                    <div class="project-img-wrapper project-badges">
                         <span class="project-type-tag" style="background-color: #0077b6;">Bioinformatics</span>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Bioinformatics Automation - Bacteriophage Genome Analysis</h3>
+                        <h3 class="project-title">Bioinformatics: Bacteriophage Genome Pipeline</h3>
                         <p class="project-desc">Built Python-based batch pipelines for automated extraction, validation, classification, and processing of genomic datasets, designed to scale across 1,000+ genome files.</p>
                         <div class="tags-container project-tags">
                             <span class="skill-tag">Python</span><span class="skill-tag">Biopython</span><span class="skill-tag">pandas</span><span class="skill-tag">Docker</span><span class="skill-tag">Linux</span><span class="skill-tag">Git</span>
                         </div>
                         <ul class="project-features">
                             <li>Automated genomic data extraction and classification</li>
-                            <li>Designed batch pipelines scalable for 1,000+ files</li>
-                            <li><a href="https://doi.org/10.5281/zenodo.21988477" target="_blank" style="color: var(--accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; margin-top: 8px;">View Project on Zenodo <i class="fas fa-external-link-alt"></i></a></li>
+                            <li>Designed to scale across 1,000+ genome files</li>
                         </ul>
+                        <a href="https://doi.org/10.5281/zenodo.21988477" target="_blank" rel="noopener" class="btn-view-cert project-link"><i class="fas fa-external-link-alt"></i> View on Zenodo</a>
                     </div>
                 </div>
 
