@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hivana98.github.io/Ivan-Armadi-Portfolio/sitemap.xml

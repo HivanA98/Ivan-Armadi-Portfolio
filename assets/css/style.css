@@ -138,6 +138,9 @@ p { font-size: 0.95rem; color: #888891; line-height: 1.7; margin-bottom: 2.5rem;
 .section-padding { padding: 6rem 0; }
 .section-header { text-align: center; margin-bottom: 4rem; }
 .section-eyebrow { font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-red); margin-bottom: 0.5rem; display: inline-block; }
+/* judul section kini <h2> (SEO); pertahankan tampilan lama dari <h3> */
+h2.section-title { margin-bottom: 0; line-height: inherit; }
+.section-kicker { font-size: 1.1rem; line-height: 1.5; margin-bottom: 1.5rem; }
 .section-title { font-size: 2.5rem; font-weight: 800; color: var(--text-main); position: relative; display: inline-block; }
 .section-title::after {
     content: ''; display: block; width: 50px; height: 3px; background: linear-gradient(90deg, var(--accent-red), var(--accent-purple));
