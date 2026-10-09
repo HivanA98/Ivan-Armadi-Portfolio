@@ -35,6 +35,27 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "ProfilePage",
+      "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#webpage",
+      "url": "https://hivana98.github.io/Ivan-Armadi-Portfolio/",
+      "name": "Ivan Armadi Hasugian - QA Engineer | Test Automation Portfolio",
+      "description": "ISTQB-certified QA Engineer, 3 years in banking, e-commerce, travel-tech, and automotive. Test automation with Playwright, Cypress, Robot Framework, Katalon.",
+      "inLanguage": "en",
+      "dateModified": "2026-10-09",
+      "isPartOf": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#website"
+      },
+      "about": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#person"
+      },
+      "mainEntity": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#primaryimage"
+      }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#website",
       "url": "https://hivana98.github.io/Ivan-Armadi-Portfolio/",
@@ -45,45 +66,130 @@
       }
     },
     {
+      "@type": "ImageObject",
+      "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#primaryimage",
+      "url": "https://hivana98.github.io/Ivan-Armadi-Portfolio/assets/photoprofile/profile-photo.webp",
+      "contentUrl": "https://hivana98.github.io/Ivan-Armadi-Portfolio/assets/photoprofile/profile-photo.webp",
+      "width": 760,
+      "height": 1127,
+      "caption": "Portrait of Ivan Armadi Hasugian, QA Engineer"
+    },
+    {
       "@type": "Person",
       "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#person",
       "name": "Ivan Armadi Hasugian",
+      "givenName": "Ivan Armadi",
+      "familyName": "Hasugian",
       "jobTitle": "QA Engineer",
       "description": "ISTQB-certified QA Engineer, 3 years in banking, e-commerce, travel-tech, and automotive. Test automation with Playwright, Cypress, Robot Framework, Katalon.",
       "url": "https://hivana98.github.io/Ivan-Armadi-Portfolio/",
-      "image": "https://hivana98.github.io/Ivan-Armadi-Portfolio/assets/photoprofile/profile-photo.webp",
+      "image": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#primaryimage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#webpage"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/hivanarmadi/",
         "https://github.com/HivanA98"
       ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "QA Engineer",
+        "occupationalCategory": "15-1253.00",
+        "skills": "Test automation, manual testing, SIT, UAT, regression testing, REST API testing, SQL data validation, defect triage, CI/CD"
+      },
       "alumniOf": {
         "@type": "CollegeOrUniversity",
-        "name": "Indonesia Open University"
+        "name": "Indonesia Open University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jakarta",
+          "addressCountry": "ID"
+        }
       },
       "hasCredential": [
         {
           "@type": "EducationalOccupationalCredential",
-          "name": "ISTQB Certified Tester Foundation Level"
+          "name": "ISTQB Certified Tester Foundation Level",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "ISTQB"
+          },
+          "url": "https://scr.istqb.org/?name=Ivan+Armadi+Hasugian&number=98178"
         },
         {
           "@type": "EducationalOccupationalCredential",
-          "name": "Katalon Expert Level Certification"
+          "name": "Katalon Expert Level Certification",
+          "credentialCategory": "certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Katalon Academy"
+          },
+          "url": "https://academy.katalon.com/mcertificate/64584df06b92e"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Data Science Bootcamp",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Binar Academy"
+          }
         }
       ],
       "knowsAbout": [
         "Software testing",
         "Test automation",
+        "Quality assurance",
         "Playwright",
         "Cypress",
         "Robot Framework",
         "Katalon Studio",
         "Karate",
+        "Appium",
+        "Selenium",
         "Postman",
         "REST API testing",
         "SQL",
         "GitHub Actions",
-        "Python"
+        "Python",
+        "JavaScript",
+        "Page Object Model",
+        "System integration testing",
+        "User acceptance testing"
       ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#pub1",
+      "headline": "Literature Review on the Therapeutic Potential of Bacteriophages Against Resistant Staphylococcus aureus",
+      "author": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#person"
+      },
+      "datePublished": "2025-10",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Jurnal Biologi Tropis"
+      },
+      "sameAs": "https://doi.org/10.29303/jbt.v25i4.9938",
+      "url": "https://jurnalfkip.unram.ac.id/index.php/JBT/article/view/9938"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#pub2",
+      "headline": "In silico characterization of lysis and host-recognition modules in Staphylococcus aureus bacteriophage genomes",
+      "author": {
+        "@id": "https://hivana98.github.io/Ivan-Armadi-Portfolio/#person"
+      },
+      "datePublished": "2026",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Memorias do Instituto Oswaldo Cruz"
+      },
+      "sameAs": "https://doi.org/10.1590/0074-02760260245",
+      "url": "https://memorias.ioc.fiocruz.br/article/11223/0245-in-silico-characterization-of-lysis-and-host-recognition-modules-in-staphylococcus-aureus-bacteriophage-genomes"
     }
   ]
 }
@@ -91,7 +197,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -134,7 +240,7 @@
                     <div class="image-wrapper">
                         <picture>
                             <source srcset="assets/photoprofile/profile-photo.webp" type="image/webp">
-                            <img src="assets/photoprofile/profile-photo.png" alt="Portrait of Ivan Armadi Hasugian, QA Engineer" width="835" height="1238" fetchpriority="high" decoding="async">
+                            <img src="assets/photoprofile/profile-photo.jpg" alt="Portrait of Ivan Armadi Hasugian, QA Engineer" width="760" height="1127" fetchpriority="high" decoding="async">
                         </picture>
                     </div>
                 </div>
@@ -589,8 +695,8 @@
                 <div class="project-card" data-category="automation">
                     <div class="project-img-wrapper project-badges">
                         <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
-                        <a href="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/saucedemo.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/saucedemo.yml/badge.svg" height="20" loading="lazy" decoding="async" alt="Saucedemo Cypress workflow status"></a>
-                        <a href="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/karate.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/karate.yml/badge.svg" height="20" loading="lazy" decoding="async" alt="Karate API workflow status"></a>
+                        <a href="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/saucedemo.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/saucedemo.yml/badge.svg" height="20" decoding="async" alt="Saucedemo Cypress workflow status"></a>
+                        <a href="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/karate.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Cypress-CodeJS/actions/workflows/karate.yml/badge.svg" height="20" decoding="async" alt="Karate API workflow status"></a>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Cypress &amp; Karate Automation</h3>
@@ -610,7 +716,7 @@
                 <div class="project-card" data-category="automation">
                     <div class="project-img-wrapper project-badges">
                         <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
-                        <a href="https://github.com/HivanA98/Playwright_Python/actions/workflows/tests.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Playwright_Python/actions/workflows/tests.yml/badge.svg" height="20" loading="lazy" decoding="async" alt="Playwright tests workflow status"></a>
+                        <a href="https://github.com/HivanA98/Playwright_Python/actions/workflows/tests.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Playwright_Python/actions/workflows/tests.yml/badge.svg" height="20" decoding="async" alt="Playwright tests workflow status"></a>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Playwright + pytest (Saucedemo)</h3>
@@ -630,7 +736,7 @@
                 <div class="project-card" data-category="automation">
                     <div class="project-img-wrapper project-badges">
                         <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
-                        <a href="https://github.com/HivanA98/Robot-Framework/actions/workflows/robot-tests.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Robot-Framework/actions/workflows/robot-tests.yml/badge.svg" height="20" loading="lazy" decoding="async" alt="Robot Framework tests workflow status"></a>
+                        <a href="https://github.com/HivanA98/Robot-Framework/actions/workflows/robot-tests.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Robot-Framework/actions/workflows/robot-tests.yml/badge.svg" height="20" decoding="async" alt="Robot Framework tests workflow status"></a>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Robot Framework</h3>
@@ -650,7 +756,7 @@
                 <div class="project-card" data-category="automation">
                     <div class="project-img-wrapper project-badges">
                         <span class="project-type-tag" style="background-color: #7a1b7e;">Test Automation</span>
-                        <a href="https://github.com/HivanA98/Katalon-Studio/actions/workflows/katalon-ci.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Katalon-Studio/actions/workflows/katalon-ci.yml/badge.svg" height="20" loading="lazy" decoding="async" alt="Katalon CI workflow status"></a>
+                        <a href="https://github.com/HivanA98/Katalon-Studio/actions/workflows/katalon-ci.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/Katalon-Studio/actions/workflows/katalon-ci.yml/badge.svg" height="20" decoding="async" alt="Katalon CI workflow status"></a>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Katalon Studio</h3>
@@ -670,7 +776,7 @@
                 <div class="project-card" data-category="other">
                     <div class="project-img-wrapper project-badges">
                         <span class="project-type-tag" style="background-color: #0077b6;">Data Science</span>
-                        <a href="https://github.com/HivanA98/DataScience-BinarAcademy/actions/workflows/gold.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/DataScience-BinarAcademy/actions/workflows/gold.yml/badge.svg" height="20" loading="lazy" decoding="async" alt="Gold CI workflow status"></a>
+                        <a href="https://github.com/HivanA98/DataScience-BinarAcademy/actions/workflows/gold.yml" target="_blank" rel="noopener"><img src="https://github.com/HivanA98/DataScience-BinarAcademy/actions/workflows/gold.yml/badge.svg" height="20" decoding="async" alt="Gold CI workflow status"></a>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Data Science: Indonesian Sentiment API</h3>
