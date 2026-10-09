@@ -4,4 +4,5 @@
 # explicit and keeps it excluded if that default ever changes.
 exclude:
   - _archive
+  - tools
   - README.md
