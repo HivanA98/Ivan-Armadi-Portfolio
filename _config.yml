@@ -1,0 +1,7 @@
+# GitHub Pages build settings.
+# _archive/ holds backups that must never be published. Folders starting with
+# an underscore are already skipped by Jekyll; listing it here makes that
+# explicit and keeps it excluded if that default ever changes.
+exclude:
+  - _archive
+  - README.md
